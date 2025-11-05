@@ -13,7 +13,7 @@ jobs:
       - name: Clone repo
         uses: actions/checkout@v3
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}   # penting!
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Update timestamp
         run: |
@@ -30,3 +30,4 @@ jobs:
         uses: ad-m/github-push-action@v0.6.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: main   
